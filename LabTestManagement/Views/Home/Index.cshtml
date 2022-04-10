@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Masthead-->
+<div class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Welcome To Our Project!</div>
+        <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+
+    </div>
+</div>
+<!--Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">Here is our services</h3>
+        </div>
+        <div class="row text-center">
+            @foreach (var item in Model.Services)
+            {
+
+                <div class="col-sm-4">
+
+                    <img class="card-img-top" src="~/images/services1.jpg" alt="" alt="Card image cap">
+                    <div class="card-body">
+                        <h4>
+                            <a >@item.Name</a>
+                        </h4>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</section>
+<!--Endservices-->
+<!--About Us-->
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+        <ul class="timeline">
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2009-2011</h4>
+                        <h4 class="subheading">Our Humble Beginnings</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>March 2011</h4>
+                        <h4 class="subheading">An Agency is Born</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>December 2015</h4>
+                        <h4 class="subheading">Transition to Full Service</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>July 2020</h4>
+                        <h4 class="subheading">Phase Two Expansion</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        Be Part
+                        <br />
+                        Of Our
+                        <br />
+                        Story!
+                    </h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--End About us-->
+
+<!--End Team-->
+<!--Doctors-->
+<section class="page-section" id="doctors">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Doctors</h2>
+            <h3 class="section-subheading text-muted">Here you can find doctors</h3>
+        </div>
+        <div class="row text-center">
+            @foreach (var item in Model.Doctors)
+            {
+
+                <div class="col-sm-4">
+
+                    <img class="card-img-top" src="~/images/@item.Image" alt="" style="width:330px; height:250px" alt="Card image cap">
+                    <div class="card-body">
+                        <h4>
+                            <a href="#">@item.FirstName</a>
+                        </h4>
+                        <p>@item.Description</p>
+                        <a class="btn btn-primary" asp-area="" asp-controller="Appointments" asp-action="Index">Appointment</a>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</section>
+
+

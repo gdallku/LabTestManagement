@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-LabTestManagement-BE22AE5D-A2C2-4F4D-9AEB-FB9A74627A61</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20220219214409_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20220219214409_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220219234311_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220219234311_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220219234322_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220219234322_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220219234333_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220219234333_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220219234345_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220219234345_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220219234434_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220219234434_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220219234501_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220219234501_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220220000132_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220220000132_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220220000200_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220220000200_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220220000225_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220220000225_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220220000237_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220220000237_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220220000249_Appointments.cs" />
+    <Compile Remove="Data\Migrations\20220220000249_Appointments.Designer.cs" />
+    <Compile Remove="Data\Migrations\20220224195214_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20220224195214_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\img\close-icon.svg" />
+    <None Include="wwwroot\assets\img\logos\facebook.svg" />
+    <None Include="wwwroot\assets\img\logos\google.svg" />
+    <None Include="wwwroot\assets\img\logos\ibm.svg" />
+    <None Include="wwwroot\assets\img\logos\microsoft.svg" />
+    <None Include="wwwroot\js\scripts.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.21" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
